@@ -11,16 +11,16 @@ class HotelManagmentSystem:
             self.root.geometry("1550x800+0+0")
 
             # ============= ist img ==============
-            img1=Image.open(r"C:\Users\joao7\Documents\projetti\Advanced\Hotel_GUI\images\hotel.jpg")
-            img1=img1.resize((1550,140),Image.ANTIALIAS)
+            img1=Image.open(r"D:\Python\Hotel\images\hotel.jpg")
+            img1=img1.resize((1550,140),Image.Resampling.LANCZOS)
             self.photoimg1=ImageTk.PhotoImage(img1)
 
             lblimg=Label(self.root,image=self.photoimg1,bd=4,relief=RIDGE)
             lblimg.place(x=0,y=0,width=1550,height=140)
 
             # ============= logo =================
-            img1 = Image.open(r"C:\Users\joao7\Documents\projetti\Advanced\Hotel_GUI\images\logo.png")
-            img1 = img1.resize((230, 140), Image.ANTIALIAS)
+            img1 = Image.open(r"D:\Python\Hotel\images\logo.png")
+            img1 = img1.resize((230, 140), Image.Resampling.LANCZOS)
             self.photoimg2 = ImageTk.PhotoImage(img1)
 
             lblimg = Label(self.root, image=self.photoimg2, bd=4, relief=RIDGE)
@@ -59,23 +59,23 @@ class HotelManagmentSystem:
             logout_btn.grid(row=4,column=0)
 
             # ============= right side image ===========
-            img3=Image.open(r"C:\Users\joao7\Documents\projetti\Advanced\Hotel_GUI\images\dinner.jpg")
-            img3=img3.resize((1310,590),Image.ANTIALIAS)
+            img3=Image.open(r"D:\Python\Hotel\images\dinner.jpg")
+            img3=img3.resize((1310,590),Image.Resampling.LANCZOS)
             self.photoimg3=ImageTk.PhotoImage(img3)
 
             lblimg1=Label(main_frame,image=self.photoimg3,bd=4,relief=RIDGE)
             lblimg1.place(x=225,y=0,width=1310,height=590)
 
             # ============= down images =============
-            img4=Image.open(r"C:\Users\joao7\Documents\projetti\Advanced\Hotel_GUI\images\down.jpg")
-            img4=img4.resize((230,210),Image.ANTIALIAS)
+            img4=Image.open(r"D:\Python\Hotel\images\down.jpg")
+            img4=img4.resize((230,210),Image.Resampling.LANCZOS)
             self.photoimg4=ImageTk.PhotoImage(img4)
 
             lblimg1=Label(main_frame,image=self.photoimg4,bd=4,relief=RIDGE)
             lblimg1.place(x=0,y=225,width=230,height=210)
 
-            img5=Image.open(r"C:\Users\joao7\Documents\projetti\Advanced\Hotel_GUI\images\down1.jpg")
-            img5=img5.resize((230,190),Image.ANTIALIAS)
+            img5=Image.open(r"D:\Python\Hotel\images\down1.jpg")
+            img5=img5.resize((230,190),Image.Resampling.LANCZOS)
             self.photoimg5=ImageTk.PhotoImage(img5)
 
             lblimg1=Label(main_frame,image=self.photoimg5,bd=4,relief=RIDGE)

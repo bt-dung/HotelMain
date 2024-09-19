@@ -18,8 +18,8 @@ class DetailsRoom:
         lbl_title.place(x=0, y=0, width=1295, height=50)
 
         # ============= logo =================
-        img1 = Image.open(r"C:\Users\joao7\Documents\projetti\Advanced\Hotel_GUI\images\logo.png")
-        img1 = img1.resize((100, 40), Image.ANTIALIAS)
+        img1 = Image.open(r"D:\Python\Hotel\images\logo.png")
+        img1 = img1.resize((100, 40), Image.Resampling.LANCZOS)
         self.photoimg2 = ImageTk.PhotoImage(img1)
 
         lblimg = Label(self.root, image=self.photoimg2, bd=4, relief=RIDGE)

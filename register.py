@@ -21,12 +21,12 @@ class Register:
         self.var_confpass=StringVar()
 
         # =========== bg image ============
-        self.bg=ImageTk.PhotoImage(file=r"C:\Users\joao7\Documents\projetti\Advanced\Hotel_GUI\images\regist_back.jpg")
+        self.bg=ImageTk.PhotoImage(file=r"D:\Python\Hotel\images\regist_back.jpg")
         bg_lbl=Label(self.root,image=self.bg)
         bg_lbl.place(x=0,y=0,relwidth=1,relheight=1)
 
         # ========== left image =============
-        self.bg1=ImageTk.PhotoImage(file=r"C:\Users\joao7\Documents\projetti\Advanced\Hotel_GUI\images\coffe.jpg")
+        self.bg1=ImageTk.PhotoImage(file=r"D:\Python\Hotel\images\coffe.jpg")
         bg_lbl=Label(self.root,image=self.bg1)
         bg_lbl.place(x=50,y=100,width=470,height=550)
 
@@ -98,14 +98,14 @@ class Register:
         checkbtn.place(x=50,y=380)
         
         # ===== buttons ======
-        img4=Image.open(r"C:\Users\joao7\Documents\projetti\Advanced\Hotel_GUI\images\register_logo.png")
-        img4=img4.resize((200,50),Image.ANTIALIAS)
+        img4=Image.open(r"D:\Python\Hotel\images\register_logo.png")
+        img4=img4.resize((200,50),Image.Resampling.LANCZOS)
         self.photoimage=ImageTk.PhotoImage(img4)
         b1=Button(frame,image=self.photoimage,command=self.register_data,borderwidth=0,cursor="hand2",font=("times new roman",15,"bold"))
         b1.place(x=10,y=420,width=200)
 
-        img5=Image.open(r"C:\Users\joao7\Documents\projetti\Advanced\Hotel_GUI\images\login_now.jpeg")
-        img5=img5.resize((200,50),Image.ANTIALIAS)
+        img5=Image.open(r"D:\Python\Hotel\images\login_now.jpeg")
+        img5=img5.resize((200,50),Image.Resampling.LANCZOS)
         self.photoimage1=ImageTk.PhotoImage(img5)
         b1=Button(frame,image=self.photoimage1,borderwidth=0,cursor="hand2",font=("times new roman",15,"bold"))
         b1.place(x=330,y=420,width=200)
